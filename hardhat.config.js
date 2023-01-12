@@ -6,8 +6,8 @@ module.exports = {
   defaultNetwork: "mumbai",
   networks: {
     mumbai: {
-      url: "https://polygon-mumbai.g.alchemy.com/v2/7GgqThz-Pqbk5xcWy5wTHi6WGzZFPBou",
-      accounts: [process.env.PRIVATE_KEY]
+      url: process.env.PRIVATE_KEY,
+      accounts: [process.env.ALCHEMY_KEY]
     }
   },
 
