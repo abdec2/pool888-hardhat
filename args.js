@@ -1,0 +1,5 @@
+module.exports = [
+    '0x1b1aF0A25E2a55e065F31cB7C58904AdB2Ae5d0C',
+    34352,
+    '0xF1C1F36e856e5c7b4b435112ef92fB360bCC26A0',
+]
