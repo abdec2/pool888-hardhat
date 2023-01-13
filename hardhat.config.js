@@ -3,7 +3,7 @@ require('dotenv').config();
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  defaultNetwork: "hardhat",
+  defaultNetwork: "mumbai",
   networks: {
     hardhat: {
       chainId: 31337,

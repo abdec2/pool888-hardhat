@@ -359,7 +359,7 @@ contract MasterChef is Ownable, ReentrancyGuard {
                     uint256 gra_reward = 0;
                     if(gra_users.length > 0) {
                         gra_reward = commissionAmount.mul(gratitudeRewardPercentage).div(10000);
-                        payGratitudeReward(_user, gra_reward, gra_users);
+                        payGratitudeReward(referrers[i].parent_address, gra_reward, gra_users);
                     }
                     myToken.mint(referrers[i].parent_address, commissionAmount.sub(gra_reward));
                     T8ReferralContract.recordReferralCommission(referrers[i].parent_address, commissionAmount.sub(gra_reward));
